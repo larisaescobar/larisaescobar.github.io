@@ -1,0 +1,40 @@
+.App {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 50px 50px;
+}
+
+#main-img {
+  width: 100%;
+}
+
+span {
+  font-size: 11px;
+  text-align: right;
+}
+
+@media screen and (max-width: 515px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-contianer div {
+    max-width: 300px;
+  }
+}

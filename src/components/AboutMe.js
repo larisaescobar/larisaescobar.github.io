@@ -5,7 +5,7 @@ class AboutMe extends Component {
     return (
       <div>
         <h1>Hello there!</h1>
-        <p>Thanks for visiting, i'll be back soon :)</p>
+        <p>Thanks for visiting, i'll be back soon :))</p>
         <div class="svgcontainer">
           <svg
             class="svgspin"

@@ -1,40 +1,105 @@
+html {
+  background-color: #f3dbe0;
+  color: #eb6e80;
+}
+
 .App {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 50px 0 0 120px;
 }
 
 a {
-  color: #000;
   text-decoration: none;
-  font-size: 13px;
+  color: #eb6e80;
+  font-size: 30px;
 }
 
 a:hover {
-  text-decoration: line-through;
+  color: #e24e42;
+}
+
+.yellowBlock {
+  background: #fcb44e;
+  padding: 0 18px 0 0;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0 50px 50px 50px;
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #main-img {
   width: 100%;
 }
 
-span {
-  font-size: 11px;
-  text-align: right;
+.black-background {
+  color: #fe7f9c;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 68%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-@media screen and (max-width: 515px) {
+.fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 620px) {
   .flex-container {
-    flex-direction: column;
+    padding: 30px;
   }
 
-  .flex-contianer div {
-    max-width: 300px;
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  .yellowBlock {
+    padding: 0;
+  }
+
+  .fixed {
+    left: 8%;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 54px;
+  }
+  h4 {
+    margin: 0 0 0 60px;
+  }
+  .fixed {
+    height: 50px;
   }
 }

@@ -1,6 +1,11 @@
+html {
+  background-color: #f3dbe0;
+  color: #eb6e80;
+}
+
 .App {
-  font-family: "Sarabun", sans-serif;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
 }
 
 h1 {
@@ -8,33 +13,41 @@ h1 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 50px 0 0 120px;
+}
+
 a {
-  color: #000;
   text-decoration: none;
-  font-size: 16px;
+  color: #eb6e80;
+  font-size: 30px;
 }
 
 a:hover {
   color: #e24e42;
 }
 
+.yellowBlock {
+  background: #fcb44e;
+  padding: 0 18px 0 0;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding: 50px;
-  max-width: 500px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 #main-img {
   width: 100%;
-}
-
-span {
-  font-size: 11px;
-  text-align: right;
 }
 
 .black-background {
@@ -47,40 +60,46 @@ span {
   text-align: center;
 }
 
-.svgspin {
-  text-align: center;
-  animation: spin 3s linear infinite;
-  display: block;
-  height: auto;
-  margin: 0 5px 5px 0;
-  width: 80px;
-  position: relative;
-  margin: 0 auto 20px;
+.fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
 }
 
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 515px) {
+@media only screen and (max-width: 620px) {
   .flex-container {
-    flex-direction: column;
+    padding: 30px;
   }
 
-  .flex-contianer div {
-    max-width: 300px;
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  .yellowBlock {
+    padding: 0;
+  }
+
+  .fixed {
+    left: 8%;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 54px;
+  }
+  h4 {
+    margin: 0 0 0 60px;
+  }
+  .fixed {
+    height: 50px;
   }
 }

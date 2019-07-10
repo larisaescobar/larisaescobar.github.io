@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
+
 
 class App extends Component {
   render() {

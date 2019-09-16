@@ -1,6 +1,8 @@
-import React, { Component } from "react";
-import "./App.css";
-import AboutMe from "./components/AboutMe";
+import React, { Component } from 'react';
+import './App.css';
+import AboutMe from './components/AboutMe';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -8,8 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="flex-container">
+          <Header />
           <AboutMe />
         </div>
+        <Footer />
       </div>
     );
   }

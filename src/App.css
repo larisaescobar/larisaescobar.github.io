@@ -1,15 +1,15 @@
 html {
-  background-color: #fff;
+  background-color: #FDB5A2;
   color: #282828;
 }
 
 .App {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 90px;
   margin-bottom: 10px;
   margin-top: 20px
 }
@@ -29,11 +29,15 @@ a:hover {
   color: #FF3955;
 }
 
+ul{
+  list-style: none;
+}
+
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 50px;
-  max-width: 900px;
+  max-width: 984px;
   margin: 0 auto;
 }
 
@@ -41,6 +45,17 @@ a:hover {
   position: fixed;
   left: 50%;
   bottom: 0;
+}
+
+#Header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Footer{
+  background-color: #F9A554;
 }
 
 @media only screen and (max-width: 620px) {

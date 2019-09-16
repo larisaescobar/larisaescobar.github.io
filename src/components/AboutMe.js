@@ -4,19 +4,25 @@ class AboutMe extends Component {
   render() {
     return (
       <div>
-        <h1>Larisa Escobar</h1>
-        <h3>I code and design user interfaces.<br></br>
-        I like reactjs a lot. <br></br>
-        Prague based.  <br></br>
-          Pretty dope overall. 
-        </h3>
-        <h3><a href="https://github.com/larisaescobar/" target="_blank" rel="noopener noreferrer">github</a></h3>
-        <h3><a href="https://dribbble.com/larisaescobar" target="_blank" rel="noopener noreferrer">dribbble</a></h3>
-        <h3><a href="https://www.instagram.com/larinena/" target="_blank" rel="noopener noreferrer">instagram</a></h3>
+        <div className='square'>
+          <h6>About</h6>
+          <ul>
+            <li>UI desinger</li>
+            <li>Reactjs lover</li>
+            <li>Prague based</li>
+            <li>Peonies</li>
+            <li>Analogue photography</li>
+            <li>Wes Anderson films, duh</li>
+            <li>Pretty dope overall</li>
+          </ul>
+        </div>
+        <div>
+
+        </div>
+       
+        
+        
         <h3><a href="mailto:larisaesco@gmail.com?subject=Hola Larisa!" target="_blank" rel="noopener noreferrer">email</a></h3>
-        
-   
-        
       </div>
     );
   }

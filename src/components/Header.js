@@ -1,13 +1,22 @@
-import React from 'react';
-import humanHeart from '../human-heart.png';
+import React from "react";
+import styled from "styled-components";
+
+const HeaderWrapper = styled.div`
+  max-width: 1010px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Title = styled.h1``;
 
 function Header(props) {
-    return (
-        <div id='Header'>
-            <h1>Mónica <br></br>Larisa</h1>
-            <img src={humanHeart} alt='human heart illustration' />
-        </div>
-    )
+  return (
+    <HeaderWrapper>
+      <Title>Larisa</Title>
+    </HeaderWrapper>
+  );
 }
 
 export default Header;

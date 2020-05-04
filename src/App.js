@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
-import AboutMe from './components/AboutMe';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import GlobalStyle from "./theme/globalStyle";
+import Header from "./components/Header";
 
+const AppWrapper = styled.div`
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+`;
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="flex-container">
-          <Header />
-          <AboutMe />
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <AppWrapper>
+        <Header />
+      </AppWrapper>
+    </Fragment>
+  );
 }
 
 export default App;

@@ -14,7 +14,7 @@ const AboutContent = styled.p`
 
     @media (min-width: 768px) {
         font-size: 1.5em;
-        max-width: 720px;
+        max-width: 1000px;
         padding-bottom: 16px;
         line-height: 42px;
       }
@@ -31,11 +31,17 @@ function About() {
         <AboutWrapper>
             <Header title={'About'} />
             <AboutContent>
-                Hey there, thanks for visiting my site! I’m Larisa, 
-                a self-taught web developer and designer. When I’m not working I like to embroider shirts, ride my cruiser board or cook new recipes. 
+                Hey there, thanks for visiting my site! 
+                I’m a self-taught product designer with coding skills. I like to build products from research to pixel perfect design. 
+                I have experience in visual design, ux design and user research. 
+            </AboutContent>
+            <AboutContent>
+                When I’m not working I like to embroider shirts, ride my cruiser board or cook new recipes. 
+            </AboutContent>
+            <AboutContent>
                 Got any feedback, want to collaborate or just say hello? 
             </AboutContent>
-            <ContactLink href='mailto:larisaesco@gmail.com?subject=Hola Larisa!'>Get in touch!</ContactLink>
+       
         </AboutWrapper>
     )
 } 

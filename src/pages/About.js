@@ -20,12 +20,6 @@ const AboutContent = styled.p`
       }
     `;
 
-const ContactLink = styled.a`
-    text-decoration: none;
-    font-weight: 500;
-    color: #212121;
-    font-size: 1.5em;
-`;
 function About() {
     return (
         <AboutWrapper>

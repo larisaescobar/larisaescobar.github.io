@@ -13,13 +13,23 @@ import Work from './pages/Work';
 const history = createBrowserHistory();
 
 const AppWrapper = styled.div`
-  padding: 24px;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  position: relative;
+  box-sizing: border-box;
 
   @media (min-width: 1024px) {
-    padding: 32px 72px;
   }
+`;
+
+const Container = styled.div`
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
 `;
 
 function App() {
@@ -31,6 +41,7 @@ function App() {
         
         <Router history={history}>
           <AppWrapper>
+            <Container>
             <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -38,6 +49,7 @@ function App() {
               <Route path="/about" component={About} />
             </Switch>
             <Footer />
+            </Container>
           </AppWrapper> 
         </Router>
       </ThemeProvider>

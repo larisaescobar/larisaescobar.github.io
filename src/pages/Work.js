@@ -2,11 +2,59 @@ import React from 'react';
 import styled from  'styled-components';
 import Header from '../components/Header';
 
+
+const Projects = [
+    {
+        name: 'Checkin kiosk',
+        type: 'Product design',
+        src: 'checkin_kiosk',
+        imageAlt: 'checkin kiosk ui',
+    },
+    {
+        name: 'Designer portfolio',
+        type: 'Code',
+        src: 'david_portfolio',
+        imageAlt: 'designer portfolio',
+    },
+    {
+        name: 'Email templates',
+        type: 'UI design',
+        src: 'email_template',
+        imageAlt: 'email templates design',
+    },
+    {
+        name: 'Food delivery app',
+        type: 'UI design',
+        src: 'food_delivery',
+        imageAlt: 'food delivery ui',
+    },
+    {
+        name: 'Release notes page',
+        type: 'UX/UI design',
+        src: 'release_notes',
+        imageAlt: 'release notes page ui',
+    }
+];
+
 const WorkWrapper = styled.div`
     flex: 1 100%;
+    box-sizing: border-box;
 `;
-const ProjectWrapper = styled.div`
-    display: inline-flex;
+const ProjectsWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+`;
+
+const ProjectScroller = styled.div`
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 330px;
+    height: 350px;
 `;
 const Project = styled.div`
     width: 100%;
@@ -38,12 +86,12 @@ transform: translate(-50%, -50%);
 -moz-transition: all 0.3s ease-in-out 0s;
 transition: all 0.3s ease-in-out 0s;
 `;
-const ProjectDetailTitle = styled.h3`
+const ProjectTitle = styled.h3`
     font-size: 1.5em;
     color: #FCF7F7;
     font-weight: 500;
 `;
-const ProjectDetailType = styled.p`
+const ProjectType = styled.p`
     font-size: 1.125em;
     color: #FCF7F7;
     font-weight: 400;
@@ -73,17 +121,26 @@ const Overlay = styled.div`
     height: auto;
  `;
 
-function Work() {
+function Work(project) {
     return (
         <WorkWrapper>
             <Header title={'Work'} />
-            <ProjectWrapper>
-                <Project>
-                    <Overlay/>
-                    <ProjectImg src='https://images.prismic.io/larisaescobar-portfolio/cc774a89-5dc8-4618-984a-4ca027ddb5d4_checkin_kiosk+%281%29.svg?auto=compress,format' />
-                   
-                </Project>
-            </ProjectWrapper>
+            <ProjectsWrapper>
+                <ProjectScroller>
+                {Projects.map(project => (
+                    <Project>
+                        <ProjectTitle>
+                            {project.title}
+                        </ProjectTitle>
+                        <ProjectType>
+                            {project.type}
+                        </ProjectType>
+                        <ProjectImg src={require(`../assets/${project.src}.png`)} alt={project.imageAlt} />
+                    </Project>
+                ))}
+                  </ProjectScroller>
+            </ProjectsWrapper>
+          
         </WorkWrapper>
     )
 } 

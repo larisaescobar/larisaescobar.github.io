@@ -6,8 +6,11 @@ const TopbarWrapper = styled.div`
     display: flex; 
     justify-content: space-between;
     align-items:center;
-    padding: 0;
     flex: 1 100%;
+    
+    @media (min-width: 768px) {
+        padding: 16px;
+    }
 `;
 
 const NavItemWrapper = styled.div`

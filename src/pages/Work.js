@@ -156,6 +156,9 @@ function Work(project) {
                         <ProjectType>
                             {project.type}
                         </ProjectType>
+                        <ProjectType>
+                            Project page coming soon ...
+                        </ProjectType>
                         </ProjectDetailsWrapper>
                         <ProjectImg src={require(`../assets/${project.src}.png`)} alt={project.imageAlt} />
                     </Project>

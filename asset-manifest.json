@@ -1,13 +1,16 @@
 {
-  "main.css": "/static/css/main.80b99516.chunk.css",
-  "main.js": "/static/js/main.96dafb0b.chunk.js",
-  "main.js.map": "/static/js/main.96dafb0b.chunk.js.map",
-  "static/js/1.e990ccfa.chunk.js": "/static/js/1.e990ccfa.chunk.js",
-  "static/js/1.e990ccfa.chunk.js.map": "/static/js/1.e990ccfa.chunk.js.map",
+  "main.js": "/static/js/main.6e83c367.chunk.js",
+  "main.js.map": "/static/js/main.6e83c367.chunk.js.map",
+  "static/js/1.059e176e.chunk.js": "/static/js/1.059e176e.chunk.js",
+  "static/js/1.059e176e.chunk.js.map": "/static/js/1.059e176e.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.80b99516.chunk.css.map": "/static/css/main.80b99516.chunk.css.map",
+  "static/media/checkin_kiosk.png": "/static/media/checkin_kiosk.4301f10a.png",
+  "static/media/david_portfolio.png": "/static/media/david_portfolio.866637da.png",
+  "static/media/email_template.png": "/static/media/email_template.06a8a2d0.png",
+  "static/media/food_delivery.png": "/static/media/food_delivery.60a1c32d.png",
+  "static/media/release_notes.png": "/static/media/release_notes.3153ec2b.png",
   "index.html": "/index.html",
-  "precache-manifest.56cf81e24796580f40415f7b1826ad29.js": "/precache-manifest.56cf81e24796580f40415f7b1826ad29.js",
+  "precache-manifest.6c4e86e20d3cb1977d8c377363825898.js": "/precache-manifest.6c4e86e20d3cb1977d8c377363825898.js",
   "service-worker.js": "/service-worker.js"
 }

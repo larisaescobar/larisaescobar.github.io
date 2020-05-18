@@ -4,6 +4,11 @@ import Header from '../components/Header';
 
 const ContentWrapper = styled.div`
     flex: 1 100%;
+    min-height: 430px;
+
+    @media (min-width: 768px) {
+        min-height: 550px;
+    }
 `;
 
 const BodyListWrapper = styled.div`
@@ -18,7 +23,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-    font-size: 1em;
+    font-size: 1.5em;
     list-style: none;
     padding-bottom: 8px;
 

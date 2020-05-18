@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
+import NotFound from './pages/NotFound';
 
 const history = createBrowserHistory();
 
@@ -47,6 +48,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/work" component={Work} />
               <Route path="/about" component={About} />
+              <Route path="*" component={NotFound} /> 
             </Switch>
             <Footer />
             </Container>

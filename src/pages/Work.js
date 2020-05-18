@@ -6,7 +6,7 @@ import Header from '../components/Header';
 const Projects = [
     {
         name: 'Checkin kiosk',
-        type: 'Product design',
+        type: 'UX/UI design',
         src: 'checkin_kiosk',
         imageAlt: 'checkin kiosk ui',
     },
@@ -39,6 +39,11 @@ const Projects = [
 const WorkWrapper = styled.div`
     flex: 1 100%;
     box-sizing: border-box;
+    min-height: 440px;
+
+    @media (min-width: 768px) {
+        min-height: 550px;
+    }
 `;
 const ProjectsWrapper = styled.div`
     display: flex;
@@ -53,8 +58,13 @@ const ProjectScroller = styled.div`
     display: grid;
     grid-gap: 1rem;
     grid-auto-flow: column;
-    grid-auto-columns: 330px;
-    height: 350px;
+    grid-auto-columns: 280px;
+    height: auto;
+
+    @media (min-width: 768px) {
+        grid-auto-columns: 330px;
+        height: 350px;
+    }
 `;
 const Project = styled.div`
     width: 100%;
@@ -63,15 +73,18 @@ const Project = styled.div`
     }
 
     @media (min-width: 768px) {
-        margin-right: 56px;
         width: 330px;
         height: 350px;
       }
   
 `;
+const ProjectImg = styled.img`
+    width: 100%;
+    height: auto;
+ `;
 const ProjectDetailsWrapper = styled.div`
 position: absolute;
-text-align: center;
+text-align: left;
 padding-left: 1em;
 padding-right: 1em;
 width: 100%;
@@ -85,22 +98,31 @@ transform: translate(-50%, -50%);
 -webkit-transition: all 0.3s ease-in-out 0s;
 -moz-transition: all 0.3s ease-in-out 0s;
 transition: all 0.3s ease-in-out 0s;
+
+${Project}:hover & {
+    opacity: 100%;
+}
 `;
 const ProjectTitle = styled.h3`
     font-size: 1.5em;
     color: #FCF7F7;
     font-weight: 500;
+    margin: 0;
+    padding: 24px 0 0 24px;
 `;
 const ProjectType = styled.p`
     font-size: 1.125em;
     color: #FCF7F7;
     font-weight: 400;
+    margin: 0;
+    padding: 0 24px;
 `;
 const Overlay = styled.div`
     background: #121212;
     opacity: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
+    max-height: 330px;
     position: absolute;
     left: 0;
     top: 0;
@@ -111,15 +133,12 @@ const Overlay = styled.div`
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
 
-    &:hover {
+    ${Project}:hover &  {
         opacity: 75%;
     }
 `;
 
- const ProjectImg = styled.img`
-    width: 100%;
-    height: auto;
- `;
+ 
 
 function Work(project) {
     return (
@@ -129,12 +148,15 @@ function Work(project) {
                 <ProjectScroller>
                 {Projects.map(project => (
                     <Project>
+                        <Overlay/>
+                        <ProjectDetailsWrapper>
                         <ProjectTitle>
-                            {project.title}
+                            {project.name}
                         </ProjectTitle>
                         <ProjectType>
                             {project.type}
                         </ProjectType>
+                        </ProjectDetailsWrapper>
                         <ProjectImg src={require(`../assets/${project.src}.png`)} alt={project.imageAlt} />
                     </Project>
                 ))}

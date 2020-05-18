@@ -18,14 +18,14 @@ const ContactLink = styled.a`
 const ContactLinkWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 32px 0;
+    padding: 24px 0;
     width: 100%;
     box-sizing: border-box;
 
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
-        padding: 16px;
+        padding: 0;
       }
 `;
 

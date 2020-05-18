@@ -4,6 +4,11 @@ import Header from '../components/Header';
 
 const AboutWrapper = styled.div`
     flex: 1 100%;   
+    min-height: 430px;
+
+    @media (min-width: 768px) {
+        min-height: 550px;
+    }
 `;
 
 const AboutContent = styled.p`

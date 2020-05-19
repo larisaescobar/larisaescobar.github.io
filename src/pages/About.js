@@ -31,14 +31,14 @@ function About() {
             <Header title={'About'} />
             <AboutContent>
                 Hey there, thanks for visiting my site! 
-                I’m a self-taught product designer with coding skills. I like to build products from research to pixel perfect design. 
+                I’m a self-taught product designer with coding skills. I like to build digital products from research to pixel perfect design. 
                 I have experience in visual design, ux design and user research. 
             </AboutContent>
             <AboutContent>
-                When I’m not working I like to embroider shirts, ride my cruiser board or cook new recipes. 
+                When I’m not working I like to embroider shirts, ride my cruiser board,  cook new recipes or learn new things. 
             </AboutContent>
             <AboutContent>
-                Got any feedback, want to collaborate or just say hello? 
+                Got any feedback, want to collaborate or just say hello? Get in touch!
             </AboutContent>
        
         </AboutWrapper>

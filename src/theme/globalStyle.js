@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('${props => props.theme.fontSource}');
-
   body {
     margin: 0;
     padding: 0;

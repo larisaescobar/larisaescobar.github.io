@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from './theme/globalStyle';
 import theme from './theme/theme';
-import {HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';

@@ -39,17 +39,21 @@ function App() {
   return (
     <Fragment>
       <Helmet>
-        <title>Larisa - Product Designer + Developer</title>
-        <meta name="title" content="Larisa - Product Designer + Developer" />
-        <meta name="description" content="Vienna based product designer with experience in user research, visual design and user experience." />
+          <title>Larisa - Product Designer + Developer</title>
+          <meta name="description" content="Larisa's portfolio. I'm a product designer with experience in user research, visual design and user experience." />
+          <meta name="image" content="https://images.prismic.io/larisaescobar-portfolio/53486fc4-3d1c-48e1-a9b8-515452d4d893_larisa+portfolio.png?auto=compress,format" />
 
-       
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://larisaescobar.github.io/"/>
-        <meta property="og:title" content="Larisa - Product Designer + Developer"/>
-        <meta property="og:description" content="Vienna based product designer with experience in user research, visual design and user experience. "/>
-        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
-      </Helmet>
+          <meta itemprop="name" content="Larisa - Product Designer + Developer" />
+          <meta itemprop="description" content="Larisa's portfolio. I'm a product designer with experience in user research, visual design and user experience." />
+          <meta itemprop="image" content="https://images.prismic.io/larisaescobar-portfolio/53486fc4-3d1c-48e1-a9b8-515452d4d893_larisa+portfolio.png?auto=compress,format" />
+
+          <meta name="og:title" content="Larisa - Product Designer + Developer" />
+          <meta name="og:description" content="Larisa's portfolio. I'm a product designer with experience in user research, visual design and user experience." />
+          <meta name="og:image" content="https://images.prismic.io/larisaescobar-portfolio/53486fc4-3d1c-48e1-a9b8-515452d4d893_larisa+portfolio.png?auto=compress,format" />
+          <meta name="og:url" content="https://larisaescobar.github.io/#/" />
+          <meta name="og:site_name" content="Larisa - Product Designer + Developer" />
+          <meta name="og:type" content="website" />
+       </Helmet>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         

@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/release_notes.3153ec2b.png"
   },
   {
-    "revision": "7e51f7343d49baa9a292d2926190a7f0",
+    "revision": "99ebaa3c376a1c9603c5d04d03a28e31",
     "url": "/index.html"
   }
 ];

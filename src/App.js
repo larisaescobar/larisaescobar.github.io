@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from './theme/globalStyle';
 import theme from './theme/theme';
@@ -37,6 +38,18 @@ function App() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Larisa - Product Designer + Developer</title>
+        <meta name="title" content="Larisa - Product Designer + Developer" />
+        <meta name="description" content="Vienna based product designer with experience in user research, visual design and user experience." />
+
+       
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/"/>
+        <meta property="og:title" content="Larisa - Product Designer + Developer"/>
+        <meta property="og:description" content="Vienna based product designer with experience in user research, visual design and user experience. "/>
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+      </Helmet>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         
